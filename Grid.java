@@ -6,12 +6,12 @@ public class Grid extends JFrame {
     public JPanel[][] BackgroundGrid;
     public Case[][] PiecesGrid;
     public JLayeredPane LayeredPane;
-
+    public boolean Turn = true;
     public Grid() {
         BackgroundGrid = new JPanel[8][8];
         PiecesGrid = new Case[8][8];
         boolean RowColor = true;
-
+        boolean Turn = false;
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
         LayeredPane = new JLayeredPane();

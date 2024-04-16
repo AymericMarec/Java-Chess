@@ -17,6 +17,7 @@ public class CancelMovement implements ActionListener{
     public void actionPerformed(ActionEvent e){
         System.out.println("reset");
         boolean RowColor = true;
+        this.Grid.Turn = !this.Grid.Turn;
         for(int i = 0; i < 8; i++) {
             RowColor = !RowColor;
             for(int j = 0; j < 8; j++) {
